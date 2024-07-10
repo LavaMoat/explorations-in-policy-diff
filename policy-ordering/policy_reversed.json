@@ -1029,7 +1029,7 @@
     "@gulp-sourcemaps/identity-map<gulp-sourcemaps": {
       "packages": {
         "acorn<@gulp-sourcemaps/identity-map<gulp-sourcemaps": true,
-        "normalize-path<chokidar": true,
+        "normalize-path<@gulp-sourcemaps/identity-map<gulp-sourcemaps": true,
         "postcss<@gulp-sourcemaps/identity-map<gulp-sourcemaps": true,
         "source-map<@gulp-sourcemaps/identity-map<gulp-sourcemaps": true,
         "through2<@gulp-sourcemaps/identity-map<gulp-sourcemaps": true
@@ -1037,7 +1037,7 @@
     },
     "@gulp-sourcemaps/map-sources<gulp-sourcemaps": {
       "packages": {
-        "normalize-path<@gulp-sourcemaps/map-sources<gulp-sourcemaps": true,
+        "normalize-path<anymatch<gulp-watch": true,
         "through2<@gulp-sourcemaps/map-sources<gulp-sourcemaps": true
       }
     },
@@ -1448,17 +1448,8 @@
     },
     "anymatch<chokidar": {
       "packages": {
-        "normalize-path<chokidar": true,
+        "normalize-path<anymatch<chokidar": true,
         "picomatch<anymatch<chokidar": true
-      }
-    },
-    "anymatch<chokidar<gulp-watch": {
-      "builtin": {
-        "path.sep": true
-      },
-      "packages": {
-        "micromatch<anymatch<chokidar<gulp-watch": true,
-        "normalize-path<anymatch<chokidar<gulp-watch": true
       }
     },
     "anymatch<glob-watcher<gulp": {
@@ -1467,7 +1458,7 @@
       },
       "packages": {
         "micromatch<anymatch<glob-watcher<gulp": true,
-        "normalize-path<anymatch<glob-watcher<gulp": true
+        "normalize-path<anymatch<gulp-watch": true
       }
     },
     "anymatch<gulp-watch": {
@@ -1567,11 +1558,6 @@
         "stream-exhaust<async-done<glob-watcher<gulp": true
       }
     },
-    "async-each<chokidar<gulp-watch": {
-      "globals": {
-        "define": true
-      }
-    },
     "async-settle<bach<undertaker<gulp": {
       "packages": {
         "async-done<glob-watcher<gulp": true
@@ -1665,18 +1651,18 @@
         "now-and-later<vinyl-sourcemap<vinyl-fs<gulp": true
       }
     },
-    "base<snapdragon<braces<chokidar<gulp-watch": {
+    "base<snapdragon<micromatch<matchdep<gulp-cli<gulp": {
       "builtin": {
         "util.inherits": true
       },
       "packages": {
-        "cache-base<base<snapdragon<braces<chokidar<gulp-watch": true,
-        "class-utils<base<snapdragon<braces<chokidar<gulp-watch": true,
-        "component-emitter<base<snapdragon<braces<chokidar<gulp-watch": true,
-        "define-property<base<snapdragon<braces<chokidar<gulp-watch": true,
+        "cache-base<base<snapdragon<micromatch<matchdep<gulp-cli<gulp": true,
+        "class-utils<base<snapdragon<micromatch<matchdep<gulp-cli<gulp": true,
+        "component-emitter<base<snapdragon<micromatch<matchdep<gulp-cli<gulp": true,
+        "define-property<base<snapdragon<micromatch<matchdep<gulp-cli<gulp": true,
         "isobject<gulp-cli<gulp": true,
-        "mixin-deep<base<snapdragon<braces<chokidar<gulp-watch": true,
-        "pascalcase<base<snapdragon<braces<chokidar<gulp-watch": true
+        "mixin-deep<base<snapdragon<micromatch<matchdep<gulp-cli<gulp": true,
+        "pascalcase<base<snapdragon<micromatch<matchdep<gulp-cli<gulp": true
       }
     },
     "bify-module-groups": {
@@ -1717,39 +1703,25 @@
         "fill-range<braces<chokidar": true
       }
     },
-    "braces<chokidar<glob-watcher<gulp": {
+    "braces<micromatch<anymatch<glob-watcher<gulp": {
       "packages": {
         "arr-flatten<undertaker<gulp": true,
-        "array-unique<braces<chokidar<gulp-watch": true,
-        "extend-shallow<braces<chokidar<glob-watcher<gulp": true,
-        "fill-range<braces<chokidar<glob-watcher<gulp": true,
+        "array-unique<micromatch<matchdep<gulp-cli<gulp": true,
+        "extend-shallow<braces<micromatch<anymatch<glob-watcher<gulp": true,
+        "fill-range<braces<micromatch<anymatch<glob-watcher<gulp": true,
         "isobject<gulp-cli<gulp": true,
-        "repeat-element<braces<chokidar<gulp-watch": true,
-        "snapdragon-node<braces<chokidar<gulp-watch": true,
-        "snapdragon<braces<chokidar<gulp-watch": true,
-        "split-string<braces<chokidar<gulp-watch": true,
-        "to-regex<braces<chokidar<gulp-watch": true
-      }
-    },
-    "braces<chokidar<gulp-watch": {
-      "packages": {
-        "arr-flatten<undertaker<gulp": true,
-        "array-unique<braces<chokidar<gulp-watch": true,
-        "extend-shallow<braces<chokidar<gulp-watch": true,
-        "fill-range<braces<chokidar<gulp-watch": true,
-        "isobject<gulp-cli<gulp": true,
-        "repeat-element<braces<chokidar<gulp-watch": true,
-        "snapdragon-node<braces<chokidar<gulp-watch": true,
-        "snapdragon<braces<chokidar<gulp-watch": true,
-        "split-string<braces<chokidar<gulp-watch": true,
-        "to-regex<braces<chokidar<gulp-watch": true
+        "repeat-element<braces<micromatch<anymatch<gulp-watch": true,
+        "snapdragon-node<braces<micromatch<matchdep<gulp-cli<gulp": true,
+        "snapdragon<micromatch<matchdep<gulp-cli<gulp": true,
+        "split-string<braces<micromatch<matchdep<gulp-cli<gulp": true,
+        "to-regex<micromatch<matchdep<gulp-cli<gulp": true
       }
     },
     "braces<micromatch<anymatch<gulp-watch": {
       "packages": {
         "expand-range<braces<micromatch<anymatch<gulp-watch": true,
         "preserve<braces<micromatch<anymatch<gulp-watch": true,
-        "repeat-element<braces<chokidar<gulp-watch": true
+        "repeat-element<braces<micromatch<anymatch<gulp-watch": true
       }
     },
     "browser-pack<browserify": {
@@ -1864,17 +1836,17 @@
         "Buffer": true
       }
     },
-    "cache-base<base<snapdragon<braces<chokidar<gulp-watch": {
+    "cache-base<base<snapdragon<micromatch<matchdep<gulp-cli<gulp": {
       "packages": {
-        "collection-visit<cache-base<base<snapdragon<braces<chokidar<gulp-watch": true,
-        "component-emitter<base<snapdragon<braces<chokidar<gulp-watch": true,
+        "collection-visit<cache-base<base<snapdragon<micromatch<matchdep<gulp-cli<gulp": true,
+        "component-emitter<base<snapdragon<micromatch<matchdep<gulp-cli<gulp": true,
         "get-value<array-sort<gulp-cli<gulp": true,
-        "has-value<cache-base<base<snapdragon<braces<chokidar<gulp-watch": true,
+        "has-value<cache-base<base<snapdragon<micromatch<matchdep<gulp-cli<gulp": true,
         "isobject<gulp-cli<gulp": true,
-        "set-value<cache-base<base<snapdragon<braces<chokidar<gulp-watch": true,
-        "to-object-path<cache-base<base<snapdragon<braces<chokidar<gulp-watch": true,
-        "union-value<cache-base<base<snapdragon<braces<chokidar<gulp-watch": true,
-        "unset-value<cache-base<base<snapdragon<braces<chokidar<gulp-watch": true
+        "set-value<cache-base<base<snapdragon<micromatch<matchdep<gulp-cli<gulp": true,
+        "to-object-path<cache-base<base<snapdragon<micromatch<matchdep<gulp-cli<gulp": true,
+        "union-value<cache-base<base<snapdragon<micromatch<matchdep<gulp-cli<gulp": true,
+        "unset-value<cache-base<base<snapdragon<micromatch<matchdep<gulp-cli<gulp": true
       }
     },
     "cached-path-relative<browserify": {
@@ -1968,40 +1940,8 @@
       }
     },
     "chokidar<glob-watcher<gulp": {
-      "builtin": {
-        "events.EventEmitter": true,
-        "fs": true,
-        "path.basename": true,
-        "path.dirname": true,
-        "path.extname": true,
-        "path.join": true,
-        "path.relative": true,
-        "path.resolve": true,
-        "path.sep": true
-      },
-      "globals": {
-        "clearTimeout": true,
-        "console.error": true,
-        "process.env.CHOKIDAR_INTERVAL": true,
-        "process.env.CHOKIDAR_PRINT_FSEVENTS_REQUIRE_ERROR": true,
-        "process.env.CHOKIDAR_USEPOLLING": true,
-        "process.nextTick": true,
-        "process.platform": true,
-        "setTimeout": true
-      },
       "packages": {
-        "anymatch<glob-watcher<gulp": true,
-        "async-each<chokidar<gulp-watch": true,
-        "braces<chokidar<glob-watcher<gulp": true,
-        "fsevents<chokidar<glob-watcher<gulp": true,
-        "glob-parent<eslint": true,
-        "inherits<pumpify": true,
-        "is-binary-path<chokidar<glob-watcher<gulp": true,
-        "is-glob<del": true,
-        "normalize-path<chokidar": true,
-        "path-is-absolute<gulp-watch": true,
-        "readdirp<chokidar<glob-watcher<gulp": true,
-        "upath<chokidar<glob-watcher<gulp": true
+        "fsevents<chokidar<glob-watcher<gulp": true
       }
     },
     "chokidar<gulp-watch": {
@@ -2031,11 +1971,9 @@
         "async-each<chokidar<gulp-watch": true,
         "braces<chokidar<gulp-watch": true,
         "fsevents<chokidar<gulp-watch": true,
-        "glob-parent<eslint": true,
         "glob-parent<gulp-watch": true,
         "inherits<pumpify": true,
         "is-binary-path<chokidar<gulp-watch": true,
-        "is-glob<del": true,
         "is-glob<eslint": true,
         "normalize-path<chokidar": true,
         "path-is-absolute<gulp-watch": true,
@@ -2043,15 +1981,15 @@
         "upath<chokidar<gulp-watch": true
       }
     },
-    "class-utils<base<snapdragon<braces<chokidar<gulp-watch": {
+    "class-utils<base<snapdragon<micromatch<matchdep<gulp-cli<gulp": {
       "builtin": {
         "util": true
       },
       "packages": {
         "arr-union<plugin-error<gulp-zip": true,
-        "define-property<snapdragon<braces<chokidar<gulp-watch": true,
+        "define-property<snapdragon<micromatch<matchdep<gulp-cli<gulp": true,
         "isobject<gulp-cli<gulp": true,
-        "static-extend<class-utils<base<snapdragon<braces<chokidar<gulp-watch": true
+        "static-extend<class-utils<base<snapdragon<micromatch<matchdep<gulp-cli<gulp": true
       }
     },
     "clean-stack<aggregate-error<p-map<del": {
@@ -2122,10 +2060,10 @@
         "make-iterator<arr-map<undertaker<gulp": true
       }
     },
-    "collection-visit<cache-base<base<snapdragon<braces<chokidar<gulp-watch": {
+    "collection-visit<cache-base<base<snapdragon<micromatch<matchdep<gulp-cli<gulp": {
       "packages": {
-        "map-visit<collection-visit<cache-base<base<snapdragon<braces<chokidar<gulp-watch": true,
-        "object-visit<collection-visit<cache-base<base<snapdragon<braces<chokidar<gulp-watch": true
+        "map-visit<collection-visit<cache-base<base<snapdragon<micromatch<matchdep<gulp-cli<gulp": true,
+        "object-visit<collection-visit<cache-base<base<snapdragon<micromatch<matchdep<gulp-cli<gulp": true
       }
     },
     "color-convert<ansi-styles<chalk": {
@@ -2369,26 +2307,6 @@
         "ms<debug<eslint-plugin-import": true
       }
     },
-    "debug<expand-brackets<extglob<micromatch<anymatch<chokidar<gulp-watch": {
-      "builtin": {
-        "fs.SyncWriteStream": true,
-        "net.Socket": true,
-        "tty.WriteStream": true,
-        "tty.isatty": true,
-        "util": true
-      },
-      "globals": {
-        "chrome": true,
-        "console": true,
-        "document": true,
-        "localStorage": true,
-        "navigator": true,
-        "process": true
-      },
-      "packages": {
-        "ms<debug<expand-brackets<extglob<micromatch<anymatch<chokidar<gulp-watch": true
-      }
-    },
     "debug<expand-brackets<extglob<micromatch<anymatch<glob-watcher<gulp": {
       "builtin": {
         "fs.SyncWriteStream": true,
@@ -2445,7 +2363,7 @@
         "supports-color<mocha": true
       }
     },
-    "debug<snapdragon<braces<chokidar<gulp-watch": {
+    "debug<snapdragon<micromatch<matchdep<gulp-cli<gulp": {
       "builtin": {
         "fs.SyncWriteStream": true,
         "net.Socket": true,
@@ -2462,7 +2380,7 @@
         "process": true
       },
       "packages": {
-        "ms<debug<snapdragon<braces<chokidar<gulp-watch": true
+        "ms<debug<snapdragon<micromatch<matchdep<gulp-cli<gulp": true
       }
     },
     "debug<tiny-lr<gulp-livereload": {
@@ -2502,14 +2420,9 @@
         "object-keys<json-stable-stringify<@lavamoat/lavapack": true
       }
     },
-    "define-property<base<snapdragon<braces<chokidar<gulp-watch": {
+    "define-property<base<snapdragon<micromatch<matchdep<gulp-cli<gulp": {
       "packages": {
         "is-descriptor<define-property<micromatch<matchdep<gulp-cli<gulp": true
-      }
-    },
-    "define-property<expand-brackets<extglob<micromatch<anymatch<chokidar<gulp-watch": {
-      "packages": {
-        "is-descriptor<define-property<expand-brackets<extglob<micromatch<anymatch<chokidar<gulp-watch": true
       }
     },
     "define-property<expand-brackets<extglob<micromatch<anymatch<glob-watcher<gulp": {
@@ -2517,20 +2430,9 @@
         "is-descriptor<define-property<expand-brackets<extglob<micromatch<anymatch<glob-watcher<gulp": true
       }
     },
-    "define-property<extglob<micromatch<anymatch<chokidar<gulp-watch": {
-      "packages": {
-        "is-descriptor<define-property<micromatch<matchdep<gulp-cli<gulp": true
-      }
-    },
     "define-property<extglob<micromatch<anymatch<glob-watcher<gulp": {
       "packages": {
         "is-descriptor<define-property<micromatch<matchdep<gulp-cli<gulp": true
-      }
-    },
-    "define-property<micromatch<anymatch<chokidar<gulp-watch": {
-      "packages": {
-        "is-descriptor<define-property<micromatch<matchdep<gulp-cli<gulp": true,
-        "isobject<gulp-cli<gulp": true
       }
     },
     "define-property<micromatch<anymatch<glob-watcher<gulp": {
@@ -2545,17 +2447,17 @@
         "isobject<gulp-cli<gulp": true
       }
     },
-    "define-property<snapdragon-node<braces<chokidar<gulp-watch": {
+    "define-property<snapdragon-node<braces<micromatch<matchdep<gulp-cli<gulp": {
       "packages": {
         "is-descriptor<define-property<micromatch<matchdep<gulp-cli<gulp": true
       }
     },
-    "define-property<snapdragon<braces<chokidar<gulp-watch": {
+    "define-property<snapdragon<micromatch<matchdep<gulp-cli<gulp": {
       "packages": {
-        "is-descriptor<define-property<snapdragon<braces<chokidar<gulp-watch": true
+        "is-descriptor<define-property<snapdragon<micromatch<matchdep<gulp-cli<gulp": true
       }
     },
-    "define-property<to-regex<braces<chokidar<gulp-watch": {
+    "define-property<to-regex<micromatch<matchdep<gulp-cli<gulp": {
       "packages": {
         "is-descriptor<define-property<micromatch<matchdep<gulp-cli<gulp": true,
         "isobject<gulp-cli<gulp": true
@@ -3156,20 +3058,6 @@
         "clone-regexp<execall<stylelint": true
       }
     },
-    "expand-brackets<extglob<micromatch<anymatch<chokidar<gulp-watch": {
-      "globals": {
-        "__filename": true
-      },
-      "packages": {
-        "debug<expand-brackets<extglob<micromatch<anymatch<chokidar<gulp-watch": true,
-        "define-property<expand-brackets<extglob<micromatch<anymatch<chokidar<gulp-watch": true,
-        "extend-shallow<expand-brackets<extglob<micromatch<anymatch<chokidar<gulp-watch": true,
-        "posix-character-classes<expand-brackets<extglob<micromatch<matchdep<gulp-cli<gulp": true,
-        "regex-not<micromatch<matchdep<gulp-cli<gulp": true,
-        "snapdragon<braces<chokidar<gulp-watch": true,
-        "to-regex<braces<chokidar<gulp-watch": true
-      }
-    },
     "expand-brackets<extglob<micromatch<anymatch<glob-watcher<gulp": {
       "globals": {
         "__filename": true
@@ -3180,8 +3068,8 @@
         "extend-shallow<expand-brackets<extglob<micromatch<anymatch<glob-watcher<gulp": true,
         "posix-character-classes<expand-brackets<extglob<micromatch<matchdep<gulp-cli<gulp": true,
         "regex-not<micromatch<matchdep<gulp-cli<gulp": true,
-        "snapdragon<braces<chokidar<gulp-watch": true,
-        "to-regex<braces<chokidar<gulp-watch": true
+        "snapdragon<micromatch<matchdep<gulp-cli<gulp": true,
+        "to-regex<micromatch<matchdep<gulp-cli<gulp": true
       }
     },
     "expand-brackets<micromatch<anymatch<gulp-watch": {
@@ -3194,17 +3082,7 @@
         "fill-range<expand-range<braces<micromatch<anymatch<gulp-watch": true
       }
     },
-    "extend-shallow<braces<chokidar<glob-watcher<gulp": {
-      "packages": {
-        "is-extendable<object.omit<micromatch<anymatch<gulp-watch": true
-      }
-    },
-    "extend-shallow<braces<chokidar<gulp-watch": {
-      "packages": {
-        "is-extendable<object.omit<micromatch<anymatch<gulp-watch": true
-      }
-    },
-    "extend-shallow<expand-brackets<extglob<micromatch<anymatch<chokidar<gulp-watch": {
+    "extend-shallow<braces<micromatch<anymatch<glob-watcher<gulp": {
       "packages": {
         "is-extendable<object.omit<micromatch<anymatch<gulp-watch": true
       }
@@ -3214,22 +3092,12 @@
         "is-extendable<object.omit<micromatch<anymatch<gulp-watch": true
       }
     },
-    "extend-shallow<extglob<micromatch<anymatch<chokidar<gulp-watch": {
-      "packages": {
-        "is-extendable<object.omit<micromatch<anymatch<gulp-watch": true
-      }
-    },
     "extend-shallow<extglob<micromatch<anymatch<glob-watcher<gulp": {
       "packages": {
         "is-extendable<object.omit<micromatch<anymatch<gulp-watch": true
       }
     },
-    "extend-shallow<fill-range<braces<chokidar<glob-watcher<gulp": {
-      "packages": {
-        "is-extendable<object.omit<micromatch<anymatch<gulp-watch": true
-      }
-    },
-    "extend-shallow<fill-range<braces<chokidar<gulp-watch": {
+    "extend-shallow<fill-range<braces<micromatch<anymatch<glob-watcher<gulp": {
       "packages": {
         "is-extendable<object.omit<micromatch<anymatch<gulp-watch": true
       }
@@ -3240,38 +3108,26 @@
         "is-extendable<extend-shallow<plugin-error<gulp-zip": true
       }
     },
-    "extend-shallow<set-value<cache-base<base<snapdragon<braces<chokidar<gulp-watch": {
+    "extend-shallow<set-value<cache-base<base<snapdragon<micromatch<matchdep<gulp-cli<gulp": {
       "packages": {
         "is-extendable<object.omit<micromatch<anymatch<gulp-watch": true
       }
     },
-    "extend-shallow<snapdragon<braces<chokidar<gulp-watch": {
+    "extend-shallow<snapdragon<micromatch<matchdep<gulp-cli<gulp": {
       "packages": {
         "is-extendable<object.omit<micromatch<anymatch<gulp-watch": true
-      }
-    },
-    "extglob<micromatch<anymatch<chokidar<gulp-watch": {
-      "packages": {
-        "array-unique<braces<chokidar<gulp-watch": true,
-        "define-property<extglob<micromatch<anymatch<chokidar<gulp-watch": true,
-        "expand-brackets<extglob<micromatch<anymatch<chokidar<gulp-watch": true,
-        "extend-shallow<extglob<micromatch<anymatch<chokidar<gulp-watch": true,
-        "fragment-cache<micromatch<matchdep<gulp-cli<gulp": true,
-        "regex-not<micromatch<matchdep<gulp-cli<gulp": true,
-        "snapdragon<braces<chokidar<gulp-watch": true,
-        "to-regex<braces<chokidar<gulp-watch": true
       }
     },
     "extglob<micromatch<anymatch<glob-watcher<gulp": {
       "packages": {
-        "array-unique<braces<chokidar<gulp-watch": true,
+        "array-unique<micromatch<matchdep<gulp-cli<gulp": true,
         "define-property<extglob<micromatch<anymatch<glob-watcher<gulp": true,
         "expand-brackets<extglob<micromatch<anymatch<glob-watcher<gulp": true,
         "extend-shallow<extglob<micromatch<anymatch<glob-watcher<gulp": true,
         "fragment-cache<micromatch<matchdep<gulp-cli<gulp": true,
         "regex-not<micromatch<matchdep<gulp-cli<gulp": true,
-        "snapdragon<braces<chokidar<gulp-watch": true,
-        "to-regex<braces<chokidar<gulp-watch": true
+        "snapdragon<micromatch<matchdep<gulp-cli<gulp": true,
+        "to-regex<micromatch<matchdep<gulp-cli<gulp": true
       }
     },
     "extglob<micromatch<anymatch<gulp-watch": {
@@ -3391,26 +3247,15 @@
         "to-regex-range<fill-range<braces<chokidar": true
       }
     },
-    "fill-range<braces<chokidar<glob-watcher<gulp": {
+    "fill-range<braces<micromatch<anymatch<glob-watcher<gulp": {
       "builtin": {
         "util.inspect": true
       },
       "packages": {
-        "extend-shallow<fill-range<braces<chokidar<glob-watcher<gulp": true,
-        "is-number<fill-range<braces<chokidar<glob-watcher<gulp": true,
+        "extend-shallow<fill-range<braces<micromatch<anymatch<glob-watcher<gulp": true,
+        "is-number<fill-range<braces<micromatch<anymatch<glob-watcher<gulp": true,
         "repeat-string<remark-parse<remark<@stylelint/postcss-markdown<stylelint": true,
-        "to-regex-range<fill-range<braces<chokidar<glob-watcher<gulp": true
-      }
-    },
-    "fill-range<braces<chokidar<gulp-watch": {
-      "builtin": {
-        "util.inspect": true
-      },
-      "packages": {
-        "extend-shallow<fill-range<braces<chokidar<gulp-watch": true,
-        "is-number<fill-range<braces<chokidar<gulp-watch": true,
-        "repeat-string<remark-parse<remark<@stylelint/postcss-markdown<stylelint": true,
-        "to-regex-range<fill-range<braces<chokidar<gulp-watch": true
+        "to-regex-range<fill-range<braces<micromatch<anymatch<glob-watcher<gulp": true
       }
     },
     "fill-range<expand-range<braces<micromatch<anymatch<gulp-watch": {
@@ -3418,7 +3263,7 @@
         "is-number<fill-range<expand-range<braces<micromatch<anymatch<gulp-watch": true,
         "isobject<fill-range<expand-range<braces<micromatch<anymatch<gulp-watch": true,
         "randomatic<fill-range<expand-range<braces<micromatch<anymatch<gulp-watch": true,
-        "repeat-element<braces<chokidar<gulp-watch": true,
+        "repeat-element<braces<micromatch<anymatch<gulp-watch": true,
         "repeat-string<remark-parse<remark<@stylelint/postcss-markdown<stylelint": true
       }
     },
@@ -3517,7 +3362,7 @@
     },
     "fragment-cache<micromatch<matchdep<gulp-cli<gulp": {
       "packages": {
-        "map-cache<snapdragon<braces<chokidar<gulp-watch": true
+        "map-cache<parse-filepath<fined<liftoff<gulp-cli<gulp": true
       }
     },
     "from<event-stream<gulp-livereload": {
@@ -3734,7 +3579,7 @@
       "packages": {
         "anymatch<glob-watcher<gulp": true,
         "async-done<glob-watcher<gulp": true,
-        "chokidar<glob-watcher<gulp": true,
+        "chokidar": true,
         "is-negated-glob<glob-watcher<gulp": true,
         "just-debounce<glob-watcher<gulp": true,
         "object.defaults<undertaker<gulp": true
@@ -3991,7 +3836,7 @@
       "packages": {
         "ansi-colors<gulp-watch": true,
         "anymatch<gulp-watch": true,
-        "chokidar<gulp-watch": true,
+        "chokidar": true,
         "fancy-log<gulp-watch": true,
         "glob-parent<eslint": true,
         "object-assign<react": true,
@@ -4051,24 +3896,24 @@
         "process.env.LC_CTYPE": true
       }
     },
-    "has-value<cache-base<base<snapdragon<braces<chokidar<gulp-watch": {
+    "has-value<cache-base<base<snapdragon<micromatch<matchdep<gulp-cli<gulp": {
       "packages": {
         "get-value<array-sort<gulp-cli<gulp": true,
-        "has-values<has-value<cache-base<base<snapdragon<braces<chokidar<gulp-watch": true,
+        "has-values<has-value<cache-base<base<snapdragon<micromatch<matchdep<gulp-cli<gulp": true,
         "isobject<gulp-cli<gulp": true
       }
     },
-    "has-value<unset-value<cache-base<base<snapdragon<braces<chokidar<gulp-watch": {
+    "has-value<unset-value<cache-base<base<snapdragon<micromatch<matchdep<gulp-cli<gulp": {
       "packages": {
         "get-value<array-sort<gulp-cli<gulp": true,
-        "has-values<has-value<unset-value<cache-base<base<snapdragon<braces<chokidar<gulp-watch": true,
-        "isobject<has-value<unset-value<cache-base<base<snapdragon<braces<chokidar<gulp-watch": true
+        "has-values<has-value<unset-value<cache-base<base<snapdragon<micromatch<matchdep<gulp-cli<gulp": true,
+        "isobject<has-value<unset-value<cache-base<base<snapdragon<micromatch<matchdep<gulp-cli<gulp": true
       }
     },
-    "has-values<has-value<cache-base<base<snapdragon<braces<chokidar<gulp-watch": {
+    "has-values<has-value<cache-base<base<snapdragon<micromatch<matchdep<gulp-cli<gulp": {
       "packages": {
-        "is-number<has-values<has-value<cache-base<base<snapdragon<braces<chokidar<gulp-watch": true,
-        "kind-of<has-values<has-value<cache-base<base<snapdragon<braces<chokidar<gulp-watch": true
+        "is-number<has-values<has-value<cache-base<base<snapdragon<micromatch<matchdep<gulp-cli<gulp": true,
+        "kind-of<has-values<has-value<cache-base<base<snapdragon<micromatch<matchdep<gulp-cli<gulp": true
       }
     },
     "has<browserify": {
@@ -4190,11 +4035,6 @@
         "is-windows<is-absolute<replace-homedir<gulp-cli<gulp": true
       }
     },
-    "is-accessor-descriptor<is-descriptor<define-property<expand-brackets<extglob<micromatch<anymatch<chokidar<gulp-watch": {
-      "packages": {
-        "kind-of<is-accessor-descriptor<is-descriptor<define-property<expand-brackets<extglob<micromatch<anymatch<chokidar<gulp-watch": true
-      }
-    },
     "is-accessor-descriptor<is-descriptor<define-property<expand-brackets<extglob<micromatch<anymatch<glob-watcher<gulp": {
       "packages": {
         "kind-of<is-accessor-descriptor<is-descriptor<define-property<expand-brackets<extglob<micromatch<anymatch<glob-watcher<gulp": true
@@ -4205,9 +4045,9 @@
         "kind-of<clone-deep<@babel/register": true
       }
     },
-    "is-accessor-descriptor<is-descriptor<define-property<snapdragon<braces<chokidar<gulp-watch": {
+    "is-accessor-descriptor<is-descriptor<define-property<snapdragon<micromatch<matchdep<gulp-cli<gulp": {
       "packages": {
-        "kind-of<is-data-descriptor<is-descriptor<define-property<snapdragon<braces<chokidar<gulp-watch": true
+        "kind-of<is-data-descriptor<is-descriptor<define-property<snapdragon<micromatch<matchdep<gulp-cli<gulp": true
       }
     },
     "is-alphanumerical<parse-entities<refractor<react-syntax-highlighter": {
@@ -4224,22 +4064,6 @@
         "binary-extensions<is-binary-path<chokidar": true
       }
     },
-    "is-binary-path<chokidar<glob-watcher<gulp": {
-      "builtin": {
-        "path.extname": true
-      },
-      "packages": {
-        "binary-extensions<is-binary-path<chokidar<glob-watcher<gulp": true
-      }
-    },
-    "is-binary-path<chokidar<gulp-watch": {
-      "builtin": {
-        "path.extname": true
-      },
-      "packages": {
-        "binary-extensions<is-binary-path<chokidar<gulp-watch": true
-      }
-    },
     "is-callable<es-abstract<string.prototype.matchall": {
       "globals": {
         "document": true
@@ -4253,11 +4077,6 @@
         "hasown<is-core-module<depcheck": true
       }
     },
-    "is-data-descriptor<is-descriptor<define-property<expand-brackets<extglob<micromatch<anymatch<chokidar<gulp-watch": {
-      "packages": {
-        "kind-of<is-data-descriptor<is-descriptor<define-property<expand-brackets<extglob<micromatch<anymatch<chokidar<gulp-watch": true
-      }
-    },
     "is-data-descriptor<is-descriptor<define-property<expand-brackets<extglob<micromatch<anymatch<glob-watcher<gulp": {
       "packages": {
         "kind-of<is-data-descriptor<is-descriptor<define-property<expand-brackets<extglob<micromatch<anymatch<glob-watcher<gulp": true
@@ -4268,21 +4087,14 @@
         "kind-of<clone-deep<@babel/register": true
       }
     },
-    "is-data-descriptor<is-descriptor<define-property<snapdragon<braces<chokidar<gulp-watch": {
+    "is-data-descriptor<is-descriptor<define-property<snapdragon<micromatch<matchdep<gulp-cli<gulp": {
       "packages": {
-        "kind-of<is-data-descriptor<is-descriptor<define-property<snapdragon<braces<chokidar<gulp-watch": true
+        "kind-of<is-data-descriptor<is-descriptor<define-property<snapdragon<micromatch<matchdep<gulp-cli<gulp": true
       }
     },
     "is-date-object<deep-equal<@metamask/eth-token-tracker": {
       "packages": {
         "has-tostringtag<is-generator-function<koa": true
-      }
-    },
-    "is-descriptor<define-property<expand-brackets<extglob<micromatch<anymatch<chokidar<gulp-watch": {
-      "packages": {
-        "is-accessor-descriptor<is-descriptor<define-property<expand-brackets<extglob<micromatch<anymatch<chokidar<gulp-watch": true,
-        "is-data-descriptor<is-descriptor<define-property<expand-brackets<extglob<micromatch<anymatch<chokidar<gulp-watch": true,
-        "kind-of<is-descriptor<define-property<expand-brackets<extglob<micromatch<anymatch<chokidar<gulp-watch": true
       }
     },
     "is-descriptor<define-property<expand-brackets<extglob<micromatch<anymatch<glob-watcher<gulp": {
@@ -4299,11 +4111,11 @@
         "kind-of<clone-deep<@babel/register": true
       }
     },
-    "is-descriptor<define-property<snapdragon<braces<chokidar<gulp-watch": {
+    "is-descriptor<define-property<snapdragon<micromatch<matchdep<gulp-cli<gulp": {
       "packages": {
-        "is-accessor-descriptor<is-descriptor<define-property<snapdragon<braces<chokidar<gulp-watch": true,
-        "is-data-descriptor<is-descriptor<define-property<snapdragon<braces<chokidar<gulp-watch": true,
-        "kind-of<is-descriptor<define-property<snapdragon<braces<chokidar<gulp-watch": true
+        "is-accessor-descriptor<is-descriptor<define-property<snapdragon<micromatch<matchdep<gulp-cli<gulp": true,
+        "is-data-descriptor<is-descriptor<define-property<snapdragon<micromatch<matchdep<gulp-cli<gulp": true,
+        "kind-of<is-descriptor<define-property<snapdragon<micromatch<matchdep<gulp-cli<gulp": true
       }
     },
     "is-equal-shallow<regex-cache<micromatch<anymatch<gulp-watch": {
@@ -4316,7 +4128,7 @@
         "is-plain-object<clone-deep<@babel/register": true
       }
     },
-    "is-extendable<mixin-deep<base<snapdragon<braces<chokidar<gulp-watch": {
+    "is-extendable<mixin-deep<base<snapdragon<micromatch<matchdep<gulp-cli<gulp": {
       "packages": {
         "is-plain-object<clone-deep<@babel/register": true
       }
@@ -4346,14 +4158,9 @@
         "is-extglob<micromatch<anymatch<gulp-watch": true
       }
     },
-    "is-number<fill-range<braces<chokidar<glob-watcher<gulp": {
+    "is-number<fill-range<braces<micromatch<anymatch<glob-watcher<gulp": {
       "packages": {
-        "kind-of<is-number<fill-range<braces<chokidar<glob-watcher<gulp": true
-      }
-    },
-    "is-number<fill-range<braces<chokidar<gulp-watch": {
-      "packages": {
-        "kind-of<is-number<fill-range<braces<chokidar<gulp-watch": true
+        "kind-of<is-number<fill-range<braces<micromatch<anymatch<glob-watcher<gulp": true
       }
     },
     "is-number<fill-range<expand-range<braces<micromatch<anymatch<gulp-watch": {
@@ -4361,9 +4168,9 @@
         "kind-of<is-number<fill-range<expand-range<braces<micromatch<anymatch<gulp-watch": true
       }
     },
-    "is-number<has-values<has-value<cache-base<base<snapdragon<braces<chokidar<gulp-watch": {
+    "is-number<has-values<has-value<cache-base<base<snapdragon<micromatch<matchdep<gulp-cli<gulp": {
       "packages": {
-        "kind-of<is-number<has-values<has-value<cache-base<base<snapdragon<braces<chokidar<gulp-watch": true
+        "kind-of<is-number<has-values<has-value<cache-base<base<snapdragon<micromatch<matchdep<gulp-cli<gulp": true
       }
     },
     "is-path-cwd<del": {
@@ -4446,9 +4253,9 @@
         "isarray<isobject<fill-range<expand-range<braces<micromatch<anymatch<gulp-watch": true
       }
     },
-    "isobject<has-value<unset-value<cache-base<base<snapdragon<braces<chokidar<gulp-watch": {
+    "isobject<has-value<unset-value<cache-base<base<snapdragon<micromatch<matchdep<gulp-cli<gulp": {
       "packages": {
-        "isarray<isobject<has-value<unset-value<cache-base<base<snapdragon<braces<chokidar<gulp-watch": true
+        "isarray<isobject<has-value<unset-value<cache-base<base<snapdragon<micromatch<matchdep<gulp-cli<gulp": true
       }
     },
     "jsdoc-type-pratt-parser<@es-joy/jsdoccomment<eslint-plugin-jsdoc": {
@@ -4528,12 +4335,7 @@
         "is-buffer<insert-module-globals<browserify": true
       }
     },
-    "kind-of<has-values<has-value<cache-base<base<snapdragon<braces<chokidar<gulp-watch": {
-      "packages": {
-        "is-buffer<insert-module-globals<browserify": true
-      }
-    },
-    "kind-of<is-accessor-descriptor<is-descriptor<define-property<expand-brackets<extglob<micromatch<anymatch<chokidar<gulp-watch": {
+    "kind-of<has-values<has-value<cache-base<base<snapdragon<micromatch<matchdep<gulp-cli<gulp": {
       "packages": {
         "is-buffer<insert-module-globals<browserify": true
       }
@@ -4543,27 +4345,17 @@
         "is-buffer<insert-module-globals<browserify": true
       }
     },
-    "kind-of<is-data-descriptor<is-descriptor<define-property<expand-brackets<extglob<micromatch<anymatch<chokidar<gulp-watch": {
-      "packages": {
-        "is-buffer<insert-module-globals<browserify": true
-      }
-    },
     "kind-of<is-data-descriptor<is-descriptor<define-property<expand-brackets<extglob<micromatch<anymatch<glob-watcher<gulp": {
       "packages": {
         "is-buffer<insert-module-globals<browserify": true
       }
     },
-    "kind-of<is-data-descriptor<is-descriptor<define-property<snapdragon<braces<chokidar<gulp-watch": {
+    "kind-of<is-data-descriptor<is-descriptor<define-property<snapdragon<micromatch<matchdep<gulp-cli<gulp": {
       "packages": {
         "is-buffer<insert-module-globals<browserify": true
       }
     },
-    "kind-of<is-number<fill-range<braces<chokidar<glob-watcher<gulp": {
-      "packages": {
-        "is-buffer<insert-module-globals<browserify": true
-      }
-    },
-    "kind-of<is-number<fill-range<braces<chokidar<gulp-watch": {
+    "kind-of<is-number<fill-range<braces<micromatch<anymatch<glob-watcher<gulp": {
       "packages": {
         "is-buffer<insert-module-globals<browserify": true
       }
@@ -4573,7 +4365,7 @@
         "is-buffer<insert-module-globals<browserify": true
       }
     },
-    "kind-of<is-number<has-values<has-value<cache-base<base<snapdragon<braces<chokidar<gulp-watch": {
+    "kind-of<is-number<has-values<has-value<cache-base<base<snapdragon<micromatch<matchdep<gulp-cli<gulp": {
       "packages": {
         "is-buffer<insert-module-globals<browserify": true
       }
@@ -4588,7 +4380,7 @@
         "is-buffer<insert-module-globals<browserify": true
       }
     },
-    "kind-of<object-copy<static-extend<class-utils<base<snapdragon<braces<chokidar<gulp-watch": {
+    "kind-of<object-copy<static-extend<class-utils<base<snapdragon<micromatch<matchdep<gulp-cli<gulp": {
       "packages": {
         "is-buffer<insert-module-globals<browserify": true
       }
@@ -4601,12 +4393,12 @@
         "is-buffer<insert-module-globals<browserify": true
       }
     },
-    "kind-of<snapdragon-util<snapdragon-node<braces<chokidar<gulp-watch": {
+    "kind-of<snapdragon-util<snapdragon-node<braces<micromatch<matchdep<gulp-cli<gulp": {
       "packages": {
         "is-buffer<insert-module-globals<browserify": true
       }
     },
-    "kind-of<to-object-path<cache-base<base<snapdragon<braces<chokidar<gulp-watch": {
+    "kind-of<to-object-path<cache-base<base<snapdragon<micromatch<matchdep<gulp-cli<gulp": {
       "packages": {
         "is-buffer<insert-module-globals<browserify": true
       }
@@ -4814,12 +4606,12 @@
         "process.nextTick": true
       }
     },
-    "map-visit<collection-visit<cache-base<base<snapdragon<braces<chokidar<gulp-watch": {
+    "map-visit<collection-visit<cache-base<base<snapdragon<micromatch<matchdep<gulp-cli<gulp": {
       "builtin": {
         "util.inspect": true
       },
       "packages": {
-        "object-visit<collection-visit<cache-base<base<snapdragon<braces<chokidar<gulp-watch": true
+        "object-visit<collection-visit<cache-base<base<snapdragon<micromatch<matchdep<gulp-cli<gulp": true
       }
     },
     "markdown-table<remark-stringify<remark<@stylelint/postcss-markdown<stylelint": {
@@ -4867,31 +4659,6 @@
         "process.nextTick": true
       }
     },
-    "micromatch<anymatch<chokidar<gulp-watch": {
-      "builtin": {
-        "path.basename": true,
-        "path.sep": true,
-        "util.inspect": true
-      },
-      "globals": {
-        "process.platform": true
-      },
-      "packages": {
-        "arr-diff<plugin-error<gulp-zip": true,
-        "array-unique<braces<chokidar<gulp-watch": true,
-        "braces<chokidar<gulp-watch": true,
-        "define-property<micromatch<anymatch<chokidar<gulp-watch": true,
-        "extend-shallow<plugin-error<gulp-zip": true,
-        "extglob<micromatch<anymatch<chokidar<gulp-watch": true,
-        "fragment-cache<micromatch<matchdep<gulp-cli<gulp": true,
-        "kind-of<clone-deep<@babel/register": true,
-        "nanomatch<micromatch<matchdep<gulp-cli<gulp": true,
-        "object.pick<fined<liftoff<gulp-cli<gulp": true,
-        "regex-not<micromatch<matchdep<gulp-cli<gulp": true,
-        "snapdragon<braces<chokidar<gulp-watch": true,
-        "to-regex<braces<chokidar<gulp-watch": true
-      }
-    },
     "micromatch<anymatch<glob-watcher<gulp": {
       "builtin": {
         "path.basename": true,
@@ -4903,8 +4670,8 @@
       },
       "packages": {
         "arr-diff<plugin-error<gulp-zip": true,
-        "array-unique<braces<chokidar<gulp-watch": true,
-        "braces<chokidar<glob-watcher<gulp": true,
+        "array-unique<micromatch<matchdep<gulp-cli<gulp": true,
+        "braces<micromatch<anymatch<glob-watcher<gulp": true,
         "define-property<micromatch<anymatch<glob-watcher<gulp": true,
         "extend-shallow<plugin-error<gulp-zip": true,
         "extglob<micromatch<anymatch<glob-watcher<gulp": true,
@@ -4913,8 +4680,8 @@
         "nanomatch<micromatch<matchdep<gulp-cli<gulp": true,
         "object.pick<fined<liftoff<gulp-cli<gulp": true,
         "regex-not<micromatch<matchdep<gulp-cli<gulp": true,
-        "snapdragon<braces<chokidar<gulp-watch": true,
-        "to-regex<braces<chokidar<gulp-watch": true
+        "snapdragon<micromatch<matchdep<gulp-cli<gulp": true,
+        "to-regex<micromatch<matchdep<gulp-cli<gulp": true
       }
     },
     "micromatch<anymatch<gulp-watch": {
@@ -4960,10 +4727,10 @@
         "brace-expansion<minimatch<eslint": true
       }
     },
-    "mixin-deep<base<snapdragon<braces<chokidar<gulp-watch": {
+    "mixin-deep<base<snapdragon<micromatch<matchdep<gulp-cli<gulp": {
       "packages": {
         "for-in<for-own<object.reduce<undertaker<gulp": true,
-        "is-extendable<mixin-deep<base<snapdragon<braces<chokidar<gulp-watch": true
+        "is-extendable<mixin-deep<base<snapdragon<micromatch<matchdep<gulp-cli<gulp": true
       }
     },
     "mixin-object<shallow-clone<clone-deep<merge-deep<lavamoat-core<lavamoat": {
@@ -5021,7 +4788,7 @@
       },
       "packages": {
         "arr-diff<plugin-error<gulp-zip": true,
-        "array-unique<braces<chokidar<gulp-watch": true,
+        "array-unique<micromatch<matchdep<gulp-cli<gulp": true,
         "define-property<nanomatch<micromatch<matchdep<gulp-cli<gulp": true,
         "extend-shallow<plugin-error<gulp-zip": true,
         "fragment-cache<micromatch<matchdep<gulp-cli<gulp": true,
@@ -5029,8 +4796,8 @@
         "kind-of<clone-deep<@babel/register": true,
         "object.pick<fined<liftoff<gulp-cli<gulp": true,
         "regex-not<micromatch<matchdep<gulp-cli<gulp": true,
-        "snapdragon<braces<chokidar<gulp-watch": true,
-        "to-regex<braces<chokidar<gulp-watch": true
+        "snapdragon<micromatch<matchdep<gulp-cli<gulp": true,
+        "to-regex<micromatch<matchdep<gulp-cli<gulp": true
       }
     },
     "next-tick<memoizee<debug-fabulous<gulp-sourcemaps": {
@@ -5096,27 +4863,7 @@
         "osenv<nopt<node-pre-gyp<fsevents<chokidar<gulp-watch": true
       }
     },
-    "normalize-path<@gulp-sourcemaps/map-sources<gulp-sourcemaps": {
-      "packages": {
-        "remove-trailing-separator<vinyl": true
-      }
-    },
-    "normalize-path<anymatch<chokidar<gulp-watch": {
-      "packages": {
-        "remove-trailing-separator<vinyl": true
-      }
-    },
-    "normalize-path<anymatch<glob-watcher<gulp": {
-      "packages": {
-        "remove-trailing-separator<vinyl": true
-      }
-    },
     "normalize-path<anymatch<gulp-watch": {
-      "packages": {
-        "remove-trailing-separator<vinyl": true
-      }
-    },
-    "normalize-path<vinyl-sourcemap<vinyl-fs<gulp": {
       "packages": {
         "remove-trailing-separator<vinyl": true
       }
@@ -5147,11 +4894,11 @@
         "set-blocking<yargs<nyc": true
       }
     },
-    "object-copy<static-extend<class-utils<base<snapdragon<braces<chokidar<gulp-watch": {
+    "object-copy<static-extend<class-utils<base<snapdragon<micromatch<matchdep<gulp-cli<gulp": {
       "packages": {
-        "copy-descriptor<object-copy<static-extend<class-utils<base<snapdragon<braces<chokidar<gulp-watch": true,
-        "define-property<snapdragon<braces<chokidar<gulp-watch": true,
-        "kind-of<object-copy<static-extend<class-utils<base<snapdragon<braces<chokidar<gulp-watch": true
+        "copy-descriptor<object-copy<static-extend<class-utils<base<snapdragon<micromatch<matchdep<gulp-cli<gulp": true,
+        "define-property<snapdragon<micromatch<matchdep<gulp-cli<gulp": true,
+        "kind-of<object-copy<static-extend<class-utils<base<snapdragon<micromatch<matchdep<gulp-cli<gulp": true
       }
     },
     "object-inspect<es-abstract<string.prototype.matchall": {
@@ -5163,7 +4910,7 @@
         "WeakRef": true
       }
     },
-    "object-visit<collection-visit<cache-base<base<snapdragon<braces<chokidar<gulp-watch": {
+    "object-visit<collection-visit<cache-base<base<snapdragon<micromatch<matchdep<gulp-cli<gulp": {
       "packages": {
         "isobject<gulp-cli<gulp": true
       }
@@ -6955,30 +6702,6 @@
         "util-deprecate<readable-stream": true
       }
     },
-    "readable-stream<readdirp<chokidar<glob-watcher<gulp": {
-      "builtin": {
-        "events.EventEmitter": true,
-        "stream": true,
-        "util": true
-      },
-      "globals": {
-        "process.browser": true,
-        "process.env.READABLE_STREAM": true,
-        "process.stderr": true,
-        "process.stdout": true,
-        "process.version.slice": true,
-        "setImmediate": true
-      },
-      "packages": {
-        "core-util-is<readable-stream-2": true,
-        "inherits<pumpify": true,
-        "isarray<readable-stream<readdirp<chokidar<glob-watcher<gulp": true,
-        "process-nextick-args<readable-stream-2": true,
-        "safe-buffer<readable-stream<readdirp<chokidar<glob-watcher<gulp": true,
-        "string_decoder<readable-stream<readdirp<chokidar<glob-watcher<gulp": true,
-        "util-deprecate<readable-stream": true
-      }
-    },
     "readable-stream<stream-combiner2<module-deps<browserify": {
       "builtin": {
         "events.EventEmitter": true,
@@ -7357,36 +7080,6 @@
         "picomatch<anymatch<chokidar": true
       }
     },
-    "readdirp<chokidar<glob-watcher<gulp": {
-      "builtin": {
-        "path.join": true,
-        "path.relative": true,
-        "util.inherits": true
-      },
-      "globals": {
-        "setImmediate": true
-      },
-      "packages": {
-        "graceful-fs<del": true,
-        "micromatch<anymatch<glob-watcher<gulp": true,
-        "readable-stream<readdirp<chokidar<glob-watcher<gulp": true
-      }
-    },
-    "readdirp<chokidar<gulp-watch": {
-      "builtin": {
-        "path.join": true,
-        "path.relative": true,
-        "util.inherits": true
-      },
-      "globals": {
-        "setImmediate": true
-      },
-      "packages": {
-        "graceful-fs<del": true,
-        "micromatch<anymatch<chokidar<gulp-watch": true,
-        "readable-stream<gulp-watch": true
-      }
-    },
     "regenerate<regexpu-core<@babel/helper-create-regexp-features-plugin<@babel/plugin-transform-dotall-regex<@babel/preset-env": {
       "globals": {
         "define": true
@@ -7409,7 +7102,7 @@
     "regex-not<micromatch<matchdep<gulp-cli<gulp": {
       "packages": {
         "extend-shallow<plugin-error<gulp-zip": true,
-        "safe-regex<to-regex<braces<chokidar<gulp-watch": true
+        "safe-regex<to-regex<micromatch<matchdep<gulp-cli<gulp": true
       }
     },
     "regexp.prototype.flags<string.prototype.matchall": {
@@ -7752,11 +7445,6 @@
         "buffer": true
       }
     },
-    "safe-buffer<readable-stream<readdirp<chokidar<glob-watcher<gulp": {
-      "builtin": {
-        "buffer": true
-      }
-    },
     "safe-buffer<readable-stream<stream-combiner2<module-deps<browserify": {
       "builtin": {
         "buffer": true
@@ -7854,9 +7542,9 @@
         "is-regex<es-abstract<string.prototype.matchall": true
       }
     },
-    "safe-regex<to-regex<braces<chokidar<gulp-watch": {
+    "safe-regex<to-regex<micromatch<matchdep<gulp-cli<gulp": {
       "packages": {
-        "ret<safe-regex<to-regex<braces<chokidar<gulp-watch": true
+        "ret<safe-regex<to-regex<micromatch<matchdep<gulp-cli<gulp": true
       }
     },
     "sass": {
@@ -8003,12 +7691,12 @@
         "has-property-descriptors<es-abstract<string.prototype.matchall": true
       }
     },
-    "set-value<cache-base<base<snapdragon<braces<chokidar<gulp-watch": {
+    "set-value<cache-base<base<snapdragon<micromatch<matchdep<gulp-cli<gulp": {
       "packages": {
-        "extend-shallow<set-value<cache-base<base<snapdragon<braces<chokidar<gulp-watch": true,
+        "extend-shallow<set-value<cache-base<base<snapdragon<micromatch<matchdep<gulp-cli<gulp": true,
         "is-extendable<object.omit<micromatch<anymatch<gulp-watch": true,
         "is-plain-object<clone-deep<@babel/register": true,
-        "split-string<braces<chokidar<gulp-watch": true
+        "split-string<braces<micromatch<matchdep<gulp-cli<gulp": true
       }
     },
     "shallow-clone<clone-deep<merge-deep<lavamoat-core<lavamoat": {
@@ -8058,19 +7746,19 @@
         "is-fullwidth-code-point<slice-ansi<table<stylelint": true
       }
     },
-    "snapdragon-node<braces<chokidar<gulp-watch": {
+    "snapdragon-node<braces<micromatch<matchdep<gulp-cli<gulp": {
       "packages": {
-        "define-property<snapdragon-node<braces<chokidar<gulp-watch": true,
+        "define-property<snapdragon-node<braces<micromatch<matchdep<gulp-cli<gulp": true,
         "isobject<gulp-cli<gulp": true,
-        "snapdragon-util<snapdragon-node<braces<chokidar<gulp-watch": true
+        "snapdragon-util<snapdragon-node<braces<micromatch<matchdep<gulp-cli<gulp": true
       }
     },
-    "snapdragon-util<snapdragon-node<braces<chokidar<gulp-watch": {
+    "snapdragon-util<snapdragon-node<braces<micromatch<matchdep<gulp-cli<gulp": {
       "packages": {
-        "kind-of<snapdragon-util<snapdragon-node<braces<chokidar<gulp-watch": true
+        "kind-of<snapdragon-util<snapdragon-node<braces<micromatch<matchdep<gulp-cli<gulp": true
       }
     },
-    "snapdragon<braces<chokidar<gulp-watch": {
+    "snapdragon<micromatch<matchdep<gulp-cli<gulp": {
       "builtin": {
         "fs.readFileSync": true,
         "path.dirname": true,
@@ -8080,14 +7768,14 @@
         "__filename": true
       },
       "packages": {
-        "base<snapdragon<braces<chokidar<gulp-watch": true,
-        "debug<snapdragon<braces<chokidar<gulp-watch": true,
-        "define-property<snapdragon<braces<chokidar<gulp-watch": true,
-        "extend-shallow<snapdragon<braces<chokidar<gulp-watch": true,
-        "map-cache<snapdragon<braces<chokidar<gulp-watch": true,
+        "base<snapdragon<micromatch<matchdep<gulp-cli<gulp": true,
+        "debug<snapdragon<micromatch<matchdep<gulp-cli<gulp": true,
+        "define-property<snapdragon<micromatch<matchdep<gulp-cli<gulp": true,
+        "extend-shallow<snapdragon<micromatch<matchdep<gulp-cli<gulp": true,
+        "map-cache<parse-filepath<fined<liftoff<gulp-cli<gulp": true,
         "source-map-resolve<css<rework<resolve-url-loader": true,
-        "source-map<snapdragon<braces<chokidar<gulp-watch": true,
-        "use<snapdragon<braces<chokidar<gulp-watch": true
+        "source-map<snapdragon<micromatch<matchdep<gulp-cli<gulp": true,
+        "use<snapdragon<micromatch<matchdep<gulp-cli<gulp": true
       }
     },
     "source-map": {
@@ -8170,7 +7858,7 @@
         "define": true
       }
     },
-    "split-string<braces<chokidar<gulp-watch": {
+    "split-string<braces<micromatch<matchdep<gulp-cli<gulp": {
       "packages": {
         "extend-shallow<plugin-error<gulp-zip": true
       }
@@ -8183,13 +7871,13 @@
         "through<debounce-stream": true
       }
     },
-    "static-extend<class-utils<base<snapdragon<braces<chokidar<gulp-watch": {
+    "static-extend<class-utils<base<snapdragon<micromatch<matchdep<gulp-cli<gulp": {
       "builtin": {
         "util.inherits": true
       },
       "packages": {
-        "define-property<snapdragon<braces<chokidar<gulp-watch": true,
-        "object-copy<static-extend<class-utils<base<snapdragon<braces<chokidar<gulp-watch": true
+        "define-property<snapdragon<micromatch<matchdep<gulp-cli<gulp": true,
+        "object-copy<static-extend<class-utils<base<snapdragon<micromatch<matchdep<gulp-cli<gulp": true
       }
     },
     "stream-combiner<event-stream<gulp-livereload": {
@@ -8290,11 +7978,6 @@
     "string_decoder<readable-stream<read-only-stream<browserify": {
       "packages": {
         "safe-buffer<readable-stream<read-only-stream<browserify": true
-      }
-    },
-    "string_decoder<readable-stream<readdirp<chokidar<glob-watcher<gulp": {
-      "packages": {
-        "safe-buffer<readable-stream<readdirp<chokidar<glob-watcher<gulp": true
       }
     },
     "string_decoder<readable-stream<stream-combiner2<module-deps<browserify": {
@@ -8909,9 +8592,9 @@
         "is-negated-glob<glob-watcher<gulp": true
       }
     },
-    "to-object-path<cache-base<base<snapdragon<braces<chokidar<gulp-watch": {
+    "to-object-path<cache-base<base<snapdragon<micromatch<matchdep<gulp-cli<gulp": {
       "packages": {
-        "kind-of<to-object-path<cache-base<base<snapdragon<braces<chokidar<gulp-watch": true
+        "kind-of<to-object-path<cache-base<base<snapdragon<micromatch<matchdep<gulp-cli<gulp": true
       }
     },
     "to-regex-range<fill-range<braces<chokidar": {
@@ -8919,24 +8602,18 @@
         "is-number<to-regex-range<fill-range<braces<chokidar": true
       }
     },
-    "to-regex-range<fill-range<braces<chokidar<glob-watcher<gulp": {
+    "to-regex-range<fill-range<braces<micromatch<anymatch<glob-watcher<gulp": {
       "packages": {
-        "is-number<fill-range<braces<chokidar<glob-watcher<gulp": true,
+        "is-number<fill-range<braces<micromatch<anymatch<glob-watcher<gulp": true,
         "repeat-string<remark-parse<remark<@stylelint/postcss-markdown<stylelint": true
       }
     },
-    "to-regex-range<fill-range<braces<chokidar<gulp-watch": {
+    "to-regex<micromatch<matchdep<gulp-cli<gulp": {
       "packages": {
-        "is-number<fill-range<braces<chokidar<gulp-watch": true,
-        "repeat-string<remark-parse<remark<@stylelint/postcss-markdown<stylelint": true
-      }
-    },
-    "to-regex<braces<chokidar<gulp-watch": {
-      "packages": {
-        "define-property<to-regex<braces<chokidar<gulp-watch": true,
+        "define-property<to-regex<micromatch<matchdep<gulp-cli<gulp": true,
         "extend-shallow<plugin-error<gulp-zip": true,
         "regex-not<micromatch<matchdep<gulp-cli<gulp": true,
-        "safe-regex<to-regex<braces<chokidar<gulp-watch": true
+        "safe-regex<to-regex<micromatch<matchdep<gulp-cli<gulp": true
       }
     },
     "to-through<vinyl-fs<gulp": {
@@ -9120,12 +8797,12 @@
         "vfile<react-markdown": true
       }
     },
-    "union-value<cache-base<base<snapdragon<braces<chokidar<gulp-watch": {
+    "union-value<cache-base<base<snapdragon<micromatch<matchdep<gulp-cli<gulp": {
       "packages": {
         "arr-union<plugin-error<gulp-zip": true,
         "get-value<array-sort<gulp-cli<gulp": true,
         "is-extendable<object.omit<micromatch<anymatch<gulp-watch": true,
-        "set-value<cache-base<base<snapdragon<braces<chokidar<gulp-watch": true
+        "set-value<cache-base<base<snapdragon<micromatch<matchdep<gulp-cli<gulp": true
       }
     },
     "unique-stream<glob-stream<vinyl-fs<gulp": {
@@ -9154,20 +8831,10 @@
         "unist-util-visit-parents<unist-util-visit<react-markdown": true
       }
     },
-    "unset-value<cache-base<base<snapdragon<braces<chokidar<gulp-watch": {
+    "unset-value<cache-base<base<snapdragon<micromatch<matchdep<gulp-cli<gulp": {
       "packages": {
-        "has-value<unset-value<cache-base<base<snapdragon<braces<chokidar<gulp-watch": true,
+        "has-value<unset-value<cache-base<base<snapdragon<micromatch<matchdep<gulp-cli<gulp": true,
         "isobject<gulp-cli<gulp": true
-      }
-    },
-    "upath<chokidar<glob-watcher<gulp": {
-      "builtin": {
-        "path": true
-      }
-    },
-    "upath<chokidar<gulp-watch": {
-      "builtin": {
-        "path": true
       }
     },
     "uri-js<ajv<eslint": {
@@ -9180,7 +8847,7 @@
         "path.sep": true
       }
     },
-    "use<snapdragon<braces<chokidar<gulp-watch": {
+    "use<snapdragon<micromatch<matchdep<gulp-cli<gulp": {
       "packages": {
         "kind-of<clone-deep<@babel/register": true
       }
@@ -9342,7 +9009,7 @@
         "append-buffer<vinyl-sourcemap<vinyl-fs<gulp": true,
         "convert-source-map<gulp-sourcemaps": true,
         "graceful-fs<del": true,
-        "normalize-path<vinyl-sourcemap<vinyl-fs<gulp": true,
+        "normalize-path<anymatch<gulp-watch": true,
         "now-and-later<vinyl-sourcemap<vinyl-fs<gulp": true,
         "remove-bom-buffer<vinyl-fs<gulp": true,
         "vinyl": true
